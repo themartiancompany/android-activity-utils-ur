@@ -25,7 +25,7 @@ license=(
 depends=(
   "android-utils"
   "bbrightnessctl"
-  "displayctl"
+  "android-display-dim"
   "touchctl"
 )
 _os="$( \
