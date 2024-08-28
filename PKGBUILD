@@ -6,8 +6,8 @@
 _offline="false"
 _git="false"
 pkgname=android-activity-utils
-pkgver=0.0.0.0.0.0.0.0.0.0.0.0.0.1
-_commit="97ea672f2ade63cf8aa8b761d8cb033e3ea95069"
+pkgver=0.0.0.0.0.0.0.0.0.0.0.0.0.1.1
+_commit="f0e2d7b4f1ab463c9b6c99ea6024374566533109"
 pkgrel=1
 _pkgdesc=(
   "Android activity utilities."
@@ -23,9 +23,10 @@ license=(
   AGPL3
 )
 depends=(
+  "android-display-dim"
+  "android-lockscreen-utils"
   "android-utils"
   "bbrightnessctl"
-  "android-display-dim"
   "touchctl"
 )
 _os="$( \
@@ -70,7 +71,7 @@ _tarname="${pkgname}-${_tag}"
     _sum="d4f4179c6e4ce1702c5fe6af132669e8ec4d0378428f69518f2926b969663a91"
   elif [[ "${_tag_name}" == "commit" ]]; then
     _tar="${_tarname}.zip::${_url}/archive/${_commit}.zip"
-    _sum="3ac5e599131ecad15777157102fc4c0302b59673c5a44552879de2dfbd7e75da"
+    _sum="3df3662d7f0f4ea84eaee892759a7cede46f2e16eb2a1f4a8c4cdfb4af31fe00"
   fi && \
     source+=(
       "${_tar}"
